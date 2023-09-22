@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block title %}Greeting{% endblock %}
+{% block main %}
+    <div class="container">
+        <form id="newNote" class="newnote_content" method="GET" action="/deleteCoockie">
+            <label for="name" class="form-field__label">Привет:</label>
+            <p>{{ name }}</p>
+            <input type="submit" value="Выйти" />
+        </form>
+    </div>
+{% endblock %}
